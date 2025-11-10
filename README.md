@@ -304,7 +304,7 @@ CREATE TABLE PBI_Dataset (
 
 -- Create stage and load data
 CREATE STAGE pbi_stage
-    URL = ''s3://YOUR_BUCKET_NAME/'
+    URL = 's3://YOUR_BUCKET_NAME/'
     STORAGE_INTEGRATION = PBI_Integration;
 
 COPY INTO PBI_Dataset 
@@ -331,7 +331,6 @@ UPDATE agriculture SET year_group = 'Y3' WHERE year BETWEEN 2016 AND 2019;
 UPDATE agriculture SET rainfall_groups = 'Low' WHERE rainfall >= 255 AND rainfall < 1200;
 UPDATE agriculture SET rainfall_groups = 'Medium' WHERE rainfall >= 1200 AND rainfall < 2800;
 UPDATE agriculture SET rainfall_groups = 'High' WHERE rainfall >= 2800;
-
 ```
 
 **Step 5: Connect Power BI**
