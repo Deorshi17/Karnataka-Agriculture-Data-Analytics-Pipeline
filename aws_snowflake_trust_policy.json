@@ -4,12 +4,12 @@
         {
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::327903110591:user/x38b1000-s"
+                "AWS": "arn:aws:iam::YOUR_AWS_ACCOUNT_ID:user/YOUR_IAM_USER"
             },
             "Action": "sts:AssumeRole",
             "Condition": {
                 "StringEquals": {
-                    "sts:ExternalId": "GJ04636_SFCRole=3_BvbQ1TAbR3voq/CVgRtKj+QdVIY="
+                    "sts:ExternalId": "YOUR_EXTERNAL_ID_FROM_SNOWFLAKE"
                 }
             }
         }

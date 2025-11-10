@@ -1,0 +1,17 @@
+// Average rainfall across all records
+Avg Rainfall = AVERAGE(AGRICULTURE[RAINFALL])
+
+// Maximum rainfall value
+Max Rainfall = MAX('AGRICULTURE'[RAINFALL])
+
+// Minimum rainfall value
+Min Rainfall = MIN('AGRICULTURE'[RAINFALL])
+
+// Total area (summed)
+Total Area = SUM('AGRICULTURE'[AREA])
+
+// Count of unique crop types
+Total Crops = DISTINCTCOUNT('AGRICULTURE'[CROPS])
+
+// Count of unique locations
+Total Locations = DISTINCTCOUNT(AGRICULTURE[LOCATION])
