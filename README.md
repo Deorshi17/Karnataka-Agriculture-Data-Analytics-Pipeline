@@ -76,7 +76,7 @@ Traditional methods lack the scalability and analytical capabilities needed to p
 
 **1. Data Ingestion**
 
-- Created S3 bucket (```s3://project-powerbi-in/```)
+- Created S3 bucket (```s3://YOUR_BUCKET_NAME/```)
 - Uploaded raw CSV data to cloud storage
 - Configured IAM role for secure access
 
@@ -91,8 +91,8 @@ CREATE SCHEMA PBI_Data;
 CREATE STORAGE INTEGRATION PBI_Integration
     TYPE = EXTERNAL_STAGE
     STORAGE_PROVIDER = 'S3'
-    STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::060795902998:role/powerbi.role'
-    STORAGE_ALLOWED_LOCATIONS = ('s3://project-powerbi-in/');
+    STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::YOUR_AWS_ACCOUNT_ID:user/YOUR_IAM_ROLE'
+    STORAGE_ALLOWED_LOCATIONS = ('s3://YOUR_BUCKET_NAME/');
 ```
 
 **3. Data Transformation**
@@ -249,8 +249,8 @@ CREATE OR REPLACE STORAGE INTEGRATION PBI_Integration
     TYPE = EXTERNAL_STAGE
     STORAGE_PROVIDER = 'S3'
     ENABLED = TRUE
-    STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::327903110591:user/x38b1000-s'
-    STORAGE_ALLOWED_LOCATIONS = ('s3://project-powerbi-in/');
+    STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::YOUR_AWS_ACCOUNT_ID:user/YOUR_IAM_ROLE'
+    STORAGE_ALLOWED_LOCATIONS = ('s3://YOUR_BUCKET_NAME/');
 
 -- 2. Get Snowflake user and external ID
 DESC INTEGRATION PBI_Integration;
@@ -267,12 +267,12 @@ DESC INTEGRATION PBI_Integration;
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::327903110591:user/x38b1000-s"
+        "AWS": "arn:aws:iam::YOUR_AWS_ACCOUNT_ID:user/YOUR_IAM_USER"
       },
       "Action": "sts:AssumeRole",
       "Condition": {
         "StringEquals": {
-          "sts:ExternalId": "GJ04636_SFCRole=3_BvbQ1TAbR3voq/CVgRtKj+QdVIY="
+          "sts:ExternalId": "YOUR_EXTERNAL_ID"
         }
       }
     }
@@ -304,7 +304,7 @@ CREATE TABLE PBI_Dataset (
 
 -- Create stage and load data
 CREATE STAGE pbi_stage
-    URL = 's3://project-powerbi-in'
+    URL = ''s3://YOUR_BUCKET_NAME/'
     STORAGE_INTEGRATION = PBI_Integration;
 
 COPY INTO PBI_Dataset 
