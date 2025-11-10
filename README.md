@@ -71,6 +71,15 @@ Traditional methods lack the scalability and analytical capabilities needed to p
 - **Snowflake Storage Integration** - Secure S3 connectivity
 - **External Stages** - Data loading pipeline
 
+**Pipeline Components**
+
+| Stage | Tool | Purpose |
+|-------|------|---------|
+| **Storage** | AWS S3 | Raw data lake |
+| **Ingestion** | Snowflake External Stage | Data loading |
+| **Processing** | Snowflake SQL | ETL operations |
+| **Analysis** | Power BI + DAX | Business logic |
+| **Presentation** | Power BI Service | End-user access |
 
 ## Methods
 
