@@ -189,46 +189,38 @@ Total Locations = DISTINCTCOUNT(AGRICULTURE[LOCATION])
 
 
 ## Dashboard/Output
+
 **Power BI Dashboard Features:**
 
-**1. Executive Summary Page**
 
-- Total locations, crops, and area metrics
-- KPI cards showing min/max/avg rainfall
-- Year-over-year comparisons
+**1. Crop-Wise Rainfall Distribution Page**
 
+- Max and Min rainfall KPI cards
+- Average rainfall by crops and soil type (clustered column chart)
+- Average rainfall by location and crops (stacked area chart)
+- Seasonal rainfall distribution (donut chart)
+- Interactive filters: Location, Season, and Crops slicers
 
-**Rainfall Analysis Page**
+**2. Agriculture Rainfall Overview Page**
 
-- Rainfall distribution by region
-- Time series analysis
-- Rainfall group breakdown
-- Interactive filters by season and year
-
-
-**Crop Performance Page**
-
-- Yield analysis by crop type
-- Soil type impact visualization
-- Irrigation method comparison
-- Price trend analysis
-
-
-**Regional Insights Page**
-
-- Geographic heat maps
-- District-wise performance metrics
-- Comparative analysis across locations
-
+- Summary KPI cards: Average Rainfall, Total Locations, Total Crops, Total Area
+- Total area by irrigation method (donut chart)
+- Average rainfall by year and location (line chart)
+- Average rainfall by year and season (stacked area chart)
+- Average rainfall by location and season (horizontal bar chart)
+- Interactive filters: Location, Crops, and Season slicers
 
 
 **Sample Visualizations:**
 
-- 📊 Clustered column charts for rainfall comparisons
-- 🗺️ Map visuals for geographic distribution
-- 📈 Line charts for temporal trends
-- 🔢 Matrix tables for detailed breakdowns
-- 🎯 KPI cards for key metrics
+- 📊 Clustered column charts for crop and soil type rainfall comparisons
+- 📈 Line charts for temporal rainfall trends
+- 🍩 Donut charts for seasonal distribution and irrigation breakdown
+- 📊 Stacked area charts for multi-dimensional rainfall analysis
+- 📊 Horizontal bar charts for location-wise comparisons
+- 🎯 KPI cards for key metrics (Avg/Max/Min Rainfall, Total Area, Counts)
+- 🎚️ Dynamic slicers for Location, Season, and Crops filtering
+
 
 ## How to Run this Project?
 
