@@ -2,8 +2,8 @@ CREATE OR REPLACE STORAGE INTEGRATION PBI_Integration
     TYPE = EXTERNAL_STAGE
     STORAGE_PROVIDER = 'S3'
     ENABLED = TRUE
-    STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::060795902998:role/powerbi.role'
-    STORAGE_ALLOWED_LOCATIONS = ('s3://project-powerbi-in/')
+    STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::YOUR_AWS_ACCOUNT_ID:user/YOUR_IAM_ROLE'
+    STORAGE_ALLOWED_LOCATIONS = ('s3://YOUR_BUCKET_NAME/')
     COMMENT = 'Optional Comment';
 
 
@@ -35,7 +35,7 @@ select * from PBI_Dataset;
 --drop database test;
 
 create stage PowerBI.PBI_Data.pbi_stage
-url = 's3://project-powerbi-in'
+url = 's3://YOUR_BUCKET_NAME/'
 storage_integration = PBI_Integration
 
 --desc stage s1
