@@ -11,7 +11,7 @@ The project showcases real-world data engineering practices including:
 - Cross-platform data security with IAM roles
 
 ## Problem Statement
-FAgricultural planning and decision-making require comprehensive analysis of multiple factors including:
+Agricultural planning and decision-making require comprehensive analysis of multiple factors including:
 
 - **Rainfall variability** across different regions and time periods
 - **Crop yield patterns** based on soil types and irrigation methods
