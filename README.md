@@ -172,8 +172,8 @@ Total Locations = DISTINCTCOUNT(AGRICULTURE[LOCATION])
 🌱 **Crop Performance**
 
 - **Top Performing Crops:** Coconut, Coffee, and Arecanut dominate in high rainfall regions
-- **Irrigation Impact:** Drip irrigation shows 15-20% better yields compared to basin irrigation
-- **Seasonal Trends:** Kharif season (monsoon) accounts for 60% of total production
+- **Irrigation Impact:** Identified crop-specific optimization strategies (e.g., maximizing Ginger yields by utilizing drip irrigation over basin methods)
+- **Seasonal Trends:** Rabi season accounts for nearly 60% of total agricultural production in the region.
 
 🌧️ **Rainfall Analysis**
 
@@ -374,7 +374,7 @@ Total Locations = DISTINCTCOUNT(AGRICULTURE[LOCATION])
 ## Results & Conclusion
 **Key Achievements**
 
-✅ **Scalable Pipeline:** Built end-to-end cloud-based analytics pipeline processing 5,000+ records
+✅ **Scalable Pipeline:** Built end-to-end cloud-based analytics pipeline processing 3,000+ records
 
 ✅ **Data Integration:** Successfully integrated AWS S3, Snowflake, and Power BI with secure IAM policies
 
