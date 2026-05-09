@@ -26,9 +26,9 @@ Traditional methods lack the scalability and analytical capabilities needed to p
 **Dataset Characteristics:**
 
 - **Time Period:** 2004-2019 (15+ years)
-- **Records:** 5,000+ entries
+- **Records:** 3,000+ entries
 - **Locations:** 11 districts (Mangalore, Kodagu, Hassan, Mysuru, Madikeri, Chikmangaluru, Kasaragodu, Raichur, Gulbarga, Bangalore, Davangere)
-- **Crops:** 14 varieties (Coconut, Coffee, Cardamom, Pepper, Arecanut, Ginger, Tea, Paddy, Groundnut, Blackgram, Cashew, Cotton, Cocoa)
+- **Crops:** 13 varieties (Coconut, Coffee, Cardamom, Pepper, Arecanut, Ginger, Tea, Paddy, Groundnut, Blackgram, Cashew, Cotton, Cocoa)
 
 **Key Attributes:**
 
