@@ -76,6 +76,7 @@ Traditional methods lack the scalability and analytical capabilities needed to p
 | Stage | Tool | Purpose |
 |-------|------|---------|
 | **Storage** | AWS S3 | Raw data lake |
+| **Security** | AWS IAM | Role-based access & External ID auth |
 | **Ingestion** | Snowflake External Stage | Data loading |
 | **Processing** | Snowflake SQL | ETL operations |
 | **Analysis** | Power BI + DAX | Business logic |
